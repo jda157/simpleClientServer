@@ -19,6 +19,6 @@ func main() {
 		fmt.Println("Message received: ", string(message))
 
 		newmessage := strings.ToUpper(message)
-		con.Write([]byte(newmessage + "\n"))
+		con.Write([]byte(newmessage))
 	}
 }
